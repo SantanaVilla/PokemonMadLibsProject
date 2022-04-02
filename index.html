@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links for Fonts Make sure above stylesheets and after meta data so css can process-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+
+    
+    <!-- Link CSS File  -->
+    <link rel="stylesheet" href="PokemonMadLib.css">
+    <title>Pokemon Mad Libs</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokemon Mad Libs!</h1>
+            <!-- <h2>Pokemon Trainer's Journey</h2> -->
+            <p><strong>Mad Libs are stories with words removed and replaced by blank spaces. Fill in the blanks for a fun Pokemon themed adventure! The wackier, the better! You got this trainer :)</p>
+        </header>
+        <main>
+            <form id="PokemonMadlib-Form" name="PokemonMadlib-Form" onsubmit="submitMadlib(event)">
+                <section id="PokemonMadlib-Inputs">
+                    <!-- <div class="Input-Group">
+                        <label for="number">number</label>
+                        <input type="text" id="number" name="number" required>
+                    </div> -->
+                    
+                    <div class="Input-Group">
+                        <label for="adjective_1">Adjective</label>
+                        <input type="text" id="adjective_1" name="adjective_1" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="Pokemon_1">Favorite Pokemon</label>
+                        <input type="text" id="Pokemon_1" name="Pokemon_1" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="verb_1">Verb</label>
+                        <input type="text" id="verb_1" name="verb_1" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="place_1">Place</label>
+                        <input type="text" id="place_1" name="place_1" required>
+                    </div>
+
+
+                    <div class="Input-Group">
+                        <label for="adjective_2">Adjective</label>
+                        <input type="text" id="adjective_2" name="adjective_2" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="adjective_3">Adjective</label>
+                        <input type="text" id="adjective_3" name="adjective_3" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="adjective_4">Adjective</label>
+                        <input type="text" id="adjective_4" name="adjective_4" required>
+                    </div>
+
+                    <div class="Input-Group">
+                        <label for="Pokemon_2">Favorite Pokemon</label>
+                        <input type="text" id="Pokemon_2" name="Pokemon_2" required>
+                    </div>
+                </section>
+                <section id="PokemonMadlib-Submit">
+                    <button type="submit">Generate</button>
+                </section>
+            </form>
+            <section id="completed-story" class="hide"></section>
+        </main>
+    </div>
+    <!-- Link JavaScript File -->
+    <script src="PokemonMadLib.js"></script>
+</body>
+</html>
